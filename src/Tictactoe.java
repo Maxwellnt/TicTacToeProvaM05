@@ -24,7 +24,8 @@ public class Tictactoe {
 	public void initializeBoard() {
 		for(int i = 0; i < ROWS; i++) {
 			for(int j = 0; j < COLUMNS; j++) {
-				board[i][i] = "   ";
+				board[i][j] = "T";
+				// BUG ARREGLAT: El problema estava que la matriu estava agafan solsament el index "i"
 			}
 		}
 	}
